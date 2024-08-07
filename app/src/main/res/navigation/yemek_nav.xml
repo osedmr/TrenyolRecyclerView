@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yemek_nav"
+    app:startDestination="@id/kesfetFragment">
+
+    <fragment
+        android:id="@+id/kesfetFragment"
+        android:name="com.example.trendyolapp.fragments.KesfetFragment"
+        android:label="fragment_kesfet"
+        tools:layout="@layout/fragment_kesfet" />
+    <fragment
+        android:id="@+id/favorilerimFragment"
+        android:name="com.example.trendyolapp.fragments.FavorilerimFragment"
+        android:label="fragment_favorilerim"
+        tools:layout="@layout/fragment_favorilerim" />
+    <fragment
+        android:id="@+id/sepetimFragment"
+        android:name="com.example.trendyolapp.fragments.SepetimFragment"
+        android:label="fragment_sepetim"
+        tools:layout="@layout/fragment_sepetim" />
+    <fragment
+        android:id="@+id/siparislerimFragment"
+        android:name="com.example.trendyolapp.fragments.SiparislerimFragment"
+        android:label="fragment_siparislerim"
+        tools:layout="@layout/fragment_siparislerim" />
+    <fragment
+        android:id="@+id/kampanyalarFragment"
+        android:name="com.example.trendyolapp.fragments.KampanyalarFragment"
+        android:label="fragment_kampanyalar"
+        tools:layout="@layout/fragment_kampanyalar" />
+</navigation>

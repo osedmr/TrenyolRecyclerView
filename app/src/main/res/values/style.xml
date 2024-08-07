@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">5sp</item> <!-- Hint metin boyutu -->
+    </style>
+    <style name="HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">2sp</item> <!-- Hint metin boyutu -->
+        <!-- Diğer stil ayarları -->
+    </style>
+</resources>
