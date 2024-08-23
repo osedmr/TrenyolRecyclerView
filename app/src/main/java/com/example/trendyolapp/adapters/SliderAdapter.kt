@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trendyolapp.R
+import com.example.trendyolapp.viewmodels.KesfetViewModel
 
-class SliderAdapter(private val images: List<Int>) : RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
+class SliderAdapter(private val images: MutableList<Int>,var viewModel: KesfetViewModel) : RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SliderViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_image, parent, false)

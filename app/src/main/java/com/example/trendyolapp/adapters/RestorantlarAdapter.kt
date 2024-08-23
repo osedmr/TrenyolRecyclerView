@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trendyolapp.data.entity.Restoranlar
 import com.example.trendyolapp.databinding.RestoranlarCartBinding
+import com.example.trendyolapp.viewmodels.KesfetViewModel
 
-class RestorantlarAdapter(var mContext: Context,var restorantlarList: List<Restoranlar>):RecyclerView.Adapter<RestorantlarAdapter.RestorantlarViewHolder>() {
+class RestorantlarAdapter(var mContext: Context,var restorantlarList: MutableList<Restoranlar>,var viewmodel: KesfetViewModel):RecyclerView.Adapter<RestorantlarAdapter.RestorantlarViewHolder>() {
 
     inner class RestorantlarViewHolder(var binding:RestoranlarCartBinding):RecyclerView.ViewHolder(binding.root)
 

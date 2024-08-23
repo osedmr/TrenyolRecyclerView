@@ -53,4 +53,9 @@ dependencies {
     implementation (libs.material.v190)
     implementation (libs.androidx.viewpager2)
     implementation (libs.material.v140)
+
+
+    // check for the latest version
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
 }
