@@ -16,8 +16,9 @@ import com.example.trendyolapp.data.entity.Mutfaklar
 import com.example.trendyolapp.data.entity.Restoranlar
 import com.example.trendyolapp.databinding.FragmentKesfetBinding
 import com.example.trendyolapp.viewmodels.KesfetViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class KesfetFragment : Fragment() {
     private lateinit var binding:FragmentKesfetBinding
     private lateinit var viewmodel: KesfetViewModel

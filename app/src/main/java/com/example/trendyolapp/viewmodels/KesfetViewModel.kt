@@ -5,12 +5,14 @@ import androidx.lifecycle.ViewModel
 import com.example.trendyolapp.data.entity.Mutfaklar
 import com.example.trendyolapp.data.entity.Restoranlar
 import com.example.trendyolapp.data.repository.KesfetRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
+@HiltViewModel
+class KesfetViewModel @Inject constructor(var krepo: KesfetRepository) :ViewModel() {
 
-class KesfetViewModel :ViewModel() {
-    val krepo= KesfetRepository()
     var restoranlarListesi= MutableLiveData<List<Restoranlar>>()
     var mutfaklarListesi=MutableLiveData<List<Mutfaklar>>()
     var getSliderImages=MutableLiveData<List<Int>>()
